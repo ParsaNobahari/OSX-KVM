@@ -209,6 +209,7 @@ processors work just fine (even for macOS Sonoma).
 
   - Launch `virt-manager` and start the `macOS` virtual machine.
 
+> For usage on Nixos, learn more at [nixos.wiki](https://nixos.wiki/wiki/OSX-KVM).
 
 ### Headless macOS
 
