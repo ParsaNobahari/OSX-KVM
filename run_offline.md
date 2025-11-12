@@ -8,10 +8,9 @@
   ```
   mkisofs -allow-limited-size -l -J -r -iso-level 3 -V InstallAssistant -o InstallAssistant.iso path/to/InstallAssistant.pkg scripts/run_offline.sh
   ```
+  > for nixos, install `cdrkit` package
 
 * Add the following to your `OpenCore-Boot.sh`
-
-> for nixos, install `cdrkit` package
 
   ```
   -drive id=MacDVD,if=none,file="$REPO_PATH/InstallAssistant.iso",format=raw
