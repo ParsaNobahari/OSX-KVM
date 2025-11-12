@@ -11,6 +11,8 @@
 
 * Add the following to your `OpenCore-Boot.sh`
 
+> for nixos, install `cdrkit` package
+
   ```
   -drive id=MacDVD,if=none,file="$REPO_PATH/InstallAssistant.iso",format=raw
   -device ide-hd,bus=sata.5,drive=MacDVD
