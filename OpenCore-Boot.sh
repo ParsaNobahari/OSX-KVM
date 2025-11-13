@@ -13,7 +13,7 @@
 # NOTE: Tweak the "MY_OPTIONS" line in case you are having booting problems!
 ###############################################################################
 #
-# Change `Haswell-noTSX` to `Penryn` in OpenCore-Boot.sh file for macOS versions before Sonoma!
+# Change `Haswell-noTSX` to `Penryn` in OpenCore-Boot.sh file for non Sonoma macOS!
 #
 ###############################################################################
 
