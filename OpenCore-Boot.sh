@@ -13,7 +13,7 @@
 # NOTE: Tweak the "MY_OPTIONS" line in case you are having booting problems!
 ###############################################################################
 #
-# Change `Penryn` to `Haswell-noTSX` in OpenCore-Boot.sh file for macOS Sonoma!
+# Change `Haswell-noTSX` to `Penryn` in OpenCore-Boot.sh file for macOS versions before Sonoma!
 #
 ###############################################################################
 
@@ -33,7 +33,7 @@ OVMF_DIR="."
 
 # shellcheck disable=SC2054
 args=(
-  -enable-kvm -m "$ALLOCATED_RAM" -cpu Penryn,kvm=on,vendor=GenuineIntel,+invtsc,vmware-cpuid-freq=on,"$MY_OPTIONS"
+  -enable-kvm -m "$ALLOCATED_RAM" -cpu Haswell-noTSX,kvm=on,vendor=GenuineIntel,+invtsc,vmware-cpuid-freq=on,"$MY_OPTIONS"
   -machine q35
   -device qemu-xhci,id=xhci
   -device usb-kbd,bus=xhci.0 -device usb-tablet,bus=xhci.0
