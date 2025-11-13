@@ -12,7 +12,7 @@ try to login to the App Store? If yes, here are the steps to fix it.
 - Make sure that your wired ethernet connection is called "en0" (and not "en1"
   or something else). Use "ifconfig" command to verify this.
 
-- If the wired ethernet connection is not called "en0", then then go to Network
+- If the wired ethernet connection is not called "en0", then go to Network
   in System Preferences and delete all the devices, and apply the changes.
   Next, go to the console and type in `sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist`.
   Finally reboot, and then use the App Store without problems.
